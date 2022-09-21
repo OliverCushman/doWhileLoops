@@ -1,33 +1,32 @@
-
-/**
- * Write a description of class doWhileLoops here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class doWhileLoops
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class doWhileLoops
-     */
-    public doWhileLoops()
-    {
-        // initialise instance variables
-        x = 0;
+    int a = 5;
+    int b = 2;
+    int c = 1;
+    int d = -8;
+    int i = 0;
+    int k = 20;
+    
+    public void run() {
+        do {
+            System.out.println("i is " + i + " but is less than 15");
+            i++;
+        } while (i < 15);
+        do {
+            System.out.println("k is " + k + " but is greater than 5");
+            k--;
+        } while (k > 5);
+        do {
+            System.out.println("a is " + a + " but is less than 10 and b is "
+            + b + " but is less than or equal to 20");
+            a++;
+            b++;
+        } while (a < 10 && b <= 20);
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public static void main(String[] args)
+    {        
+        doWhileLoops dwl = new doWhileLoops();
+        dwl.run();
     }
 }
